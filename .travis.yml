@@ -1,13 +1,19 @@
 language: python
 python:
   - "3.6"
+  
+addons:
+  sonarcloud:
+    organization: cjohnson187-github
+    token:
+      secure: 6ffd71cc590c34c038d5ba4ba31e23bc9654d4b6
 
 install:
   - pip install codecov
 
 script:
   - coverage run --omit=*test* -m unittest
+  - sonar-scanner
 
 after_success:
   - codecov
-
