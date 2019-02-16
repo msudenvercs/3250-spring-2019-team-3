@@ -4,9 +4,9 @@ python:
   
 addons:
   sonarcloud:
-    organization: cjohnson187-github
+    organization: msudenvercs
     token:
-      secure: 6ffd71cc590c34c038d5ba4ba31e23bc9654d4b6
+      secure: 20f87a281f9d15fcaeae75eca3b9d4ce97c2c004
 
 install:
   - pip install codecov
