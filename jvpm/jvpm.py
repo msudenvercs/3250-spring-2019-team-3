@@ -1,9 +1,6 @@
 from collections import namedtuple
 from bitstring import ConstBitStream
 
-
-HeaderInformation = namedtuple("HeaderInformation", "magic minor_version major_version")
-
 class HeaderClass():
 	def __init__(self):
             self.x = ConstBitStream(filename='test.class')
