@@ -12,6 +12,11 @@ class HeaderClass():
 		print("header: ", headerMagic)
 		return headerMagic
 
+	def PullMinor(self):
+		headerMinor = self.x.read(8).uint + self.x.read(8).uint
+		print("minor: ", headerMinor)
+		return headerMinor
+
 	"""	
 		headerMinor = self.x.read(8).uint + self.x.read(8).uint
 		headerMajor = self.x.read(8).uint + self.x.read(8).uint
@@ -50,3 +55,4 @@ class HeaderClass():
 if '__main__' == __name__:
 	d = HeaderClass() 
 	d.PullMagic()
+	d.PullMinor()
