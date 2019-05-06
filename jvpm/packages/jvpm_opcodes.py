@@ -12,7 +12,7 @@ class HeaderClass():
         self.name = name
         with open(name, 'rb') as binary_file:
             self.data = binary_file.read()
-            self.bits = ConstBitSTream(self.data)
+            self.bits = ConstBitStream(self.data)
             self.temp_2 = defaultdict(list)
             self.constant_pool = defaultdict(list)
             self.constant_pool_byte_size = 0
